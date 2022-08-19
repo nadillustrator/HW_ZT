@@ -22,9 +22,9 @@ class BankAccountTest{
 
         System.out.println(MyAccount.name);
 
-        BankAccount.popolnenieScheta(MyAccount, 200);
-        BankAccount.snyatieSoScheta(HisAccount, 100);
-        BankAccount.snyatieSoScheta(HisAccount, 300);
+        MyAccount.replenishment( 200);
+        HisAccount.withdrawal( 100);
+        HisAccount.withdrawal( 300);
 
     }
 }

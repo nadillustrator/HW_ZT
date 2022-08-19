@@ -6,18 +6,25 @@ class BankAccount {
     String name;
     double balance;
 
-    public static double popolnenieScheta(BankAccount bankAccount, double a){
-        bankAccount.balance += a;
-        return bankAccount.balance;
+    void replenishment(double replenishmentAmount){
+        System.out.println("Hello, " + name +". Your balance: " + balance);
+        System.out.println("Replenishment amount: " + replenishmentAmount);
+        balance += replenishmentAmount;
+        System.out.println("Your new balance: " + balance);
+        System.out.println();
     }
 
-    public static double snyatieSoScheta(BankAccount bankAccount, double a){
-        bankAccount.balance -= a;
-        if(bankAccount.balance < a){
-            System.out.println("Недостаточно средств на счете.");
-            return bankAccount.balance;
+    void withdrawal(double withdrawalAmount){
+        System.out.println("Hello, " + name +". Your balance: " + balance);
+        System.out.println("Withdrawal amount: " + withdrawalAmount);
+        if(balance < withdrawalAmount){
+            System.out.println("Insufficient funds on the account!");
+        }else{
+        balance -= withdrawalAmount;
+        System.out.println("Your new balance: " + balance);
+
         }
-        return bankAccount.balance;
+        System.out.println();
     }
 
 
