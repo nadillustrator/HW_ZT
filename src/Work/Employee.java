@@ -15,8 +15,8 @@ public class Employee {
         department = department2;
     }
 
-    public static void doubleSalary(Employee employee){
-        employee.salary = employee.salary*2;
+    void doubleSalary(){
+        salary = salary*2;
     }
     static void info(Employee employee){
         System.out.println(employee.id);

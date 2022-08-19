@@ -12,8 +12,8 @@ public class EmployeeTest {
         Employee.info(worker2);
         System.out.println();
 
-        Employee.doubleSalary(worker1);
-        Employee.doubleSalary(worker2);
+        worker1.doubleSalary();
+        worker2.doubleSalary();
 
         System.out.println(worker1.salary);
         System.out.println();
